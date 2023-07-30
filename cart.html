@@ -3,53 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Cart | E-COMMERCE WEBSITE BY EDYODA </title>
-    <link rel="stylesheet" href="css/cart.css">
-    <!-- favicon -->
-    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
-    <!-- header links -->
-    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57ef5bbb6f.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-        <!-- HEADER -->
-    <div id="1"></div>
-    <script>
-        load("header.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(1).innerHTML = req.responseText;
-        }
-    </script>
-
-        <!-- CART CONTAINER -->
-    <div id="cartMainContainer">
-        <h1> Checkout </h1>
-        <h3 id="totalItem"> Total Items: 0 </h3>
-
-        <div id="cartContainer">
-            <!-- JS rendered code -->
+    <header>
+        <div class="logo">
+            <h1>Logo</h1>
         </div>
+        <nav>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><i class="fa-sharp fa-solid fa-cart-shopping"></i></li>     
+            
+            </ul>
+        </nav>
+        <div class="menu_btn"><i class="fa-solid fa-bars fa-xl "></i></div>
+        <section id="menu" class="not_vis" >
+            <i class="fa-solid fa-xmark fa-2xl close_btn"></i>
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </section>
+    </header>
+   
+     <section id="cart" class="">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Images</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1" alt=""></td>
+                    <td>Cartoon Astronaunt T-shirt</td>
+                    <td>399</td>
+                    <td><input type="number" value="1"></td>
+                    <td>399</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f2" alt=""></td>
+                    <td>Cartoon forest T-shirt</td>
+                    <td>399</td>
+                    <td><input type="number" value="1"></td>
+                    <td>399</td>
+                </tr><tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f3" alt=""></td>
+                    <td>Cartoon sea T-shirt</td>
+                    <td>399</td>
+                    <td><input type="number" value="1"></td>
+                    <td>399</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
 
-    </div>
+    <section id="cart-add">
+        <div id="cupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your coupon">
+                <button class="normal"> Apply
+                
+                </button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>399</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>399</strong></td>
+                </tr>
+            </table>
+            <button>Proceed to checkout</button>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        
+        <div class="hero_text">
+            
+            <h1>#Lets Introduce Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, inventore. Iure voluptas laborum laudantium qui architecto hic consectetur illum nesciunt?!</p>
+            
+        </div> 
+        
+    </section>
+    
+    
+  
+    
+    <footer>
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 321 Vishnupuri Nanded 431606</p>
+            <p><strong>Phone:</strong> (+91) 9384737494</p>
+            <p><strong>Hours:</strong>10:00 -18:00,mon-sat</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
 
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#"> Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="">Sign in</a>
+            <a href="#">view cart </a>
+            <a href="#"> my  wishlist</a>
+            <a href="#">Trac my order</a>
+            <a href="#">help </a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Gooble play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment GateWays</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
-    <!-- FOOTER -->
-    <div id="4"></div>
-    <script>
-        load("footer.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(4).innerHTML = req.responseText;
-        }
-    </script>
-<script src="/cart.js"></script>
 </html>
